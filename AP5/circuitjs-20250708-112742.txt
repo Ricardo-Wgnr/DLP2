@@ -1,0 +1,57 @@
+$ 1 0.000005 10.20027730826997 50 5 50 5e-11
+! mef_relogio 0 hour_in,\smin_in,\ssec_in hour_out,\smin_out,\ssec_out mef_relogio \0
+208 128 160 160 160 0 mef_relogio 0 0 0
+! mef_regressivo 0 hour_in,\smin_in,\ssec_in hour_out,\smin_out,\ssec_out mef_regressivo \0
+208 128 256 208 256 0 mef_regressivo 0 0 0
+! mux_2 0 adj,\sinc,\sdec,\sswitch adj_reg,\sinc_reg,\sdec_reg,\sadj_rel,\sinc_rel,\sdec_rel mux_2 \0
+208 384 160 432 160 0 mux_2 0 0 0 0 0 0
+w 224 160 384 160 0
+w 224 192 384 192 0
+w 224 224 384 224 0
+w 224 256 384 256 0
+w 224 288 384 288 0
+w 224 320 384 320 0
+w 384 352 128 352 0
+! timer_regressivo 0 clk,\shour_i,\sload,\smin_i,\sreset,\ssec_i fim,\shour,\smin,\ssec timer_regressivo \0
+208 -192 80 -160 80 0 timer_regressivo 0 0 0 0
+! timer_relogio 0 clk,\shour_i,\sload,\smin_i,\sreset,\ssec_i hour_out,\smin_out,\ssec_out timer_relogio \0
+208 -192 288 -176 288 0 timer_relogio 0 0 0
+w -192 112 -224 112 0
+w -224 112 -224 32 0
+w -224 32 224 32 0
+w 224 32 224 160 0
+w -192 176 -256 176 0
+w -256 176 -256 16 0
+w -256 16 240 16 0
+w 240 16 240 192 0
+w -192 240 -272 240 0
+w -272 240 -272 0 0
+w -272 0 256 0 0
+w 256 0 256 224 0
+w -192 448 -192 496 0
+w -192 496 224 496 0
+w 224 496 224 320 0
+w -192 384 -208 384 0
+w -208 384 -208 512 0
+w -208 512 240 512 0
+w 240 512 240 288 0
+w -192 320 -224 320 0
+w -224 320 -224 528 0
+w -224 528 256 528 0
+w 256 528 256 256 0
+w -96 112 128 160 0
+w -96 144 128 192 0
+w -96 176 128 224 0
+w -96 288 128 256 0
+w -96 320 128 288 0
+w -96 352 128 320 0
+! sinc_keys 0 adj,\sinc,\sdec,\sswitch adj,\sinc,\sdec mux \0
+208 -928 160 -912 160 0 sinc_keys 0 0 0
+! mux 0 adj,\sinc,\sdec,\sswitch adj_reg,\sinc_reg,\sdec_reg,\sadj_rel,\sinc_rel,\sdec_rel mux \0
+208 -736 160 -720 160 0 mux 0 0 0 0 0 0
+w -832 160 -736 160 0
+w -832 192 -736 192 0
+w -832 224 -736 224 0
+w -736 256 -784 256 0
+w -784 256 -784 288 0
+w -784 288 -928 288 0
